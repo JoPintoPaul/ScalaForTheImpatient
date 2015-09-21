@@ -17,7 +17,10 @@ object MainChapter12 {
 		}
   
 		// Question 4
-		def safeFact(x: Int) = {}}
-  
+		def safeFact(x: Int) = {
+			(1 to x).foldLeft(1){ 
+				(start, next) => if (next > 1) start * next else next
+			}
+		}
 	}
 }
